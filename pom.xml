@@ -9,11 +9,13 @@
     <url>http://maven.apache.org</url>
     <modules>
         <module>dudo-agent-java-agent</module>
+        <module>dudo-agent-java-asm</module>
     </modules>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <dudo.version>1.3.3</dudo.version>
+        <asm.version>9.0</asm.version>
     </properties>
 
     <reporting>
@@ -157,6 +159,23 @@
                 <artifactId>metainf-services</artifactId>
                 <version>1.7</version>
                 <scope>compile</scope>
+            </dependency>
+
+
+            <dependency>
+                <groupId>org.ow2.asm</groupId>
+                <artifactId>asm</artifactId>
+                <version>${asm.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.ow2.asm</groupId>
+                <artifactId>asm-commons</artifactId>
+                <version>${asm.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.ow2.asm</groupId>
+                <artifactId>asm-util</artifactId>
+                <version>${asm.version}</version>
             </dependency>
 
         </dependencies>

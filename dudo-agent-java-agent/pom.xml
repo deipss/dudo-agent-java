@@ -12,6 +12,7 @@
 
 
 
+
     <build>
         <finalName>dudo-agent-java-agent-${project.version}</finalName>
         <plugins>
